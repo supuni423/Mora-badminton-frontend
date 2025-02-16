@@ -19,7 +19,7 @@ const AboutPage = () => {
           University of Moratuwa International Shuttlers’ Fest (UMISF) is the
           annual badminton tournament organized by the badminton team of
           University of Moratuwa in collaboration with the Division of Physical
-          Education. The tournament will be held for the 15th time in 2024, on a
+          Education. The tournament will be held for the 16th time in 2025, on a
           grander scale than ever!
         </p>
         <div class={`${styles["history-row"]}`}>
@@ -83,18 +83,8 @@ const AboutPage = () => {
           </p>
         </h1>
         <p>
-          UMISF has been a long-standing event, spanning back to its inception
-          in 2007. The tournament is carried out with the primary intention of
-          providing a platform for badminton players to connect, compete, and
-          hone their skills. Teams from India and Malaysia have participated in
-          UMISF in 2011, marking a milestone in the history of university
-          sports. For over a decade we were able to conduct this tournament
-          successfully with the participation of 1000+ players in most of the
-          years. After a two-year hiatus due to the pandemic and other
-          unforeseen circumstances, the tournament has finally last year. In
-          2023, we proudly expanded our horizons by introducing a corporate
-          sector to the tournament, and we're confident that this year's event
-          will be a huge success too.
+          UMISF has been a long-standing event, spanning back to its inception in 2007. The tournament is carried out with the primary intention of providing a platform for badminton players to connect, compete, and hone their skills. Teams from India and Malaysia have participated in UMISF in 2011, marking a milestone in the history of university sports. For over a decade we were able to conduct this tournament successfully with the participation of 1000+ players in most of the years. In 2024, we proudly expanded our horizons by introducing Novices men's badminton championship to the tournament and we're confident that this year's events will be a huge success too.
+
         </p>
         <div className={`${styles["row"]}`}>
           <div className={`${styles["past-section-col"]}`}>
@@ -158,7 +148,7 @@ const AboutPage = () => {
                 down the days for great tournament filled with lasting
                 experiences.
               </p>
-              <h3>Yasira Punsith</h3>
+              <h3>Tharindu Ambegoda</h3>
               <h6>Captain</h6>
             </div>
           </div>
@@ -189,14 +179,9 @@ const AboutPage = () => {
             ></img>
             <div className={`${styles["testimanial-col-content"]}`}>
               <p>
-                This tournament will provide a window for players of all levels
-                to compete against each other and showcase their skills. Whether
-                you're a beginner or an experienced player, there's a place for
-                you in this tournament. Let's come together and make this
-                tournament a memorable one that demonstrates the true spirit of
-                badminton!
+                UMISF is not just about competition; it’s about passion, sportsmanship, and unforgettable moments on the court. Embrace the challenge, respect your opponents, and enjoy every rally. Whether you play to win or for the love of the game, this tournament is your chance to shine. Join us and make history!
               </p>
-              <h3>Hevindu Tilakasena</h3>
+              <h3>Vinuga Jayawardana</h3>
               <h6>Vice Captain</h6>
             </div>
           </div>
@@ -207,13 +192,9 @@ const AboutPage = () => {
             ></img>
             <div className={`${styles["testimanial-col-content"]}`}>
               <p>
-                UMISF offers the chance to test yourself against the finest
-                players around. Our team has put in a tremendous effort to
-                ensure that this tournament is well-organized and that every
-                player has an enjoyable experience. So, come prepared to give
-                your best game, meet new people, and have an amazing time!
+                UMISF is where the unexpected happens. New rivalries, new friendships, and moments that stick with you. This is your stage. Step in, play your game, and leave a mark.
               </p>
-              <h3>Hiruni Thathsarani</h3>
+              <h3>Kavindi Patabendige</h3>
               <h6>Vice Captain</h6>
             </div>
           </div>
