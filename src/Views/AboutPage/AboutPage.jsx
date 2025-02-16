@@ -90,14 +90,6 @@ const AboutPage = () => {
           <div className={`${styles["past-section-col"]}`}>
             <img
               className={`${styles["past-section-img"]}`}
-              src={require("../../assests/images/2018.jpeg")}
-              alt=""
-            ></img>
-            <h3>2018</h3>
-          </div>
-          <div className={`${styles["past-section-col"]}`}>
-            <img
-              className={`${styles["past-section-img"]}`}
               src={require("../../assests/images/2019.jpeg")}
               alt=""
             ></img>
@@ -114,10 +106,18 @@ const AboutPage = () => {
           <div className={`${styles["past-section-col"]}`}>
             <img
               className={`${styles["past-section-img"]}`}
-              src={require("../../assests/images/2023.jpg")}
+              src={require("../../assests/images/2023.jpeg")}
               alt=""
             ></img>
             <h3>2023</h3>
+          </div>
+          <div className={`${styles["past-section-col"]}`}>
+            <img
+              className={`${styles["past-section-img"]}`}
+              src={require("../../assests/images/2024.jpg")}
+              alt=""
+            ></img>
+            <h3>2024</h3>
           </div>
         </div>
       </section>
