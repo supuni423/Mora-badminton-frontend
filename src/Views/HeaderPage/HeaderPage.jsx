@@ -252,7 +252,7 @@ const HeaderPage = () => {
                     target="_blank"
                     className={`${styles["drop-down-item"]}`}
                   >
-                    Corporate Team
+                    Club Team
                   </a>
                 </MenuItem>
                 <MenuItem onClick={handleCloseRegister}>
@@ -289,6 +289,15 @@ const HeaderPage = () => {
                     className={`${styles["drop-down-item"]}`}
                   >
                     University Team
+                  </a>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                  <a
+                    href="https://drive.google.com/file/d/1rib_sQQbHAtGlFZDYSSX5xznibua_u7l/view?usp=drive_link"
+                    target="_blank"
+                    className={`${styles["drop-down-item"]}`}
+                  >
+                    Invitational School
                   </a>
                 </MenuItem>
               </Menu>
@@ -402,7 +411,7 @@ const HeaderPage = () => {
                   target="_blank"
                   className={`${styles["drop-down-item-mobile"]}`}
                 >
-                  Corporate Team
+                  Club Team
                 </a>
               </MenuItem>
               <MenuItem onClick={handleCloseRegister}>
@@ -441,6 +450,15 @@ const HeaderPage = () => {
                   University Team
                 </a>
               </MenuItem>
+              <MenuItem onClick={handleClose}>
+                  <a
+                    href="https://drive.google.com/file/d/1rib_sQQbHAtGlFZDYSSX5xznibua_u7l/view?usp=drive_link"
+                    target="_blank"
+                    className={`${styles["drop-down-item"]}`}
+                  >
+                    Invitational School
+                  </a>
+                </MenuItem>
             </Menu>
           </React.Fragment>
 
@@ -519,7 +537,7 @@ const HeaderPage = () => {
                   target="_blank"
                   className={`${styles["drop-down-item-mobile"]}`}
                 >
-                  Corporate Team
+                  Club Team
                 </a>
               </MenuItem>
               <MenuItem onClick={handleCloseRegister}>
@@ -558,6 +576,15 @@ const HeaderPage = () => {
                   University Team
                 </a>
               </MenuItem>
+              <MenuItem onClick={handleClose}>
+                  <a
+                    href="https://drive.google.com/file/d/1rib_sQQbHAtGlFZDYSSX5xznibua_u7l/view?usp=drive_link"
+                    target="_blank"
+                    className={`${styles["drop-down-item"]}`}
+                  >
+                    Invitational School
+                  </a>
+                </MenuItem>
             </Menu>
           </React.Fragment>
 
