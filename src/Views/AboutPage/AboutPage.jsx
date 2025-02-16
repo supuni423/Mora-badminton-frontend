@@ -187,7 +187,7 @@ const AboutPage = () => {
           </div>
           <div className={`${styles["testimanial-col"]}`}>
             <img
-              src={require("../../assests/images/viceCaptain-female.jpg")}
+              src={require("../../assests/images/viceCaptain-female.png")}
               alt=""
             ></img>
             <div className={`${styles["testimanial-col-content"]}`}>
