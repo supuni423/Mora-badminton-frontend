@@ -174,7 +174,7 @@ const AboutPage = () => {
         <div className={`${styles["row"]}`}>
           <div className={`${styles["testimanial-col"]}`}>
             <img
-              src={require("../../assests/images/viceCaptain-male.jpg")}
+              src={require("../../assests/images/viceCaptain-male.png")}
               alt=""
             ></img>
             <div className={`${styles["testimanial-col-content"]}`}>
