@@ -94,59 +94,75 @@ const DrawsPage = () => {
   const entries = [
     {
       name: "Age Group",
-      entriess: 32,
+      entriess: 0,
       // pdf: "https://docs.google.com/spreadsheets/d/14ru7ELe31xdZ7sx92n8bOaJ92DW_wcuW9ef2TeGcO0Q/edit?usp=sharing",
       pdf: "#",
     },
     {
       name: "University Individual",
-      entriess: 32,
+      entriess: 0,
       //pdf: "https://docs.google.com/spreadsheets/d/1ajskluZjY3TTH-KYxI5pSDSWIncoZEizvzby0MbkYk0/edit?usp=sharing",
       pdf: "#",
     },
     {
       name: "University Staff",
-      entriess: 11,
+      entriess: 0,
       pdf: "#",
     },
     {
-      name: "Team Events",
-      entriess: 400,
+      name: "University Team",
+      entriess: 0,
       pdf: "#",
     },
     {
       name: "Novices",
-      entriess: 64,
+      entriess: 0,
       // pdf: "https://docs.google.com/spreadsheets/d/1ARfU-V5DV52QVro1kfBpxWC04kdtWAtzyOEUGRKY6g4/edit?usp=sharing",
       pdf: "#",
     },
+    {
+      name: "Club Team",
+      entriess: 0,
+      // pdf: "https://docs.google.com/spreadsheets/d/1ARfU-V5DV52QVro1kfBpxWC04kdtWAtzyOEUGRKY6g4/edit?usp=sharing",
+      pdf: "#",
+    },
+    {
+      name: "Invitational School",
+      entriess: 0,
+      // pdf: "https://docs.google.com/spreadsheets/d/1ARfU-V5DV52QVro1kfBpxWC04kdtWAtzyOEUGRKY6g4/edit?usp=sharing",
+      pdf: "#",
+    }
   ];
 
   const draws = [
     {
       name: "Age Group",
-      pdf: "https://docs.google.com/spreadsheets/d/1TN2peek-HyHEJ7xzB4KBz4IVq-znbxk-72z3M-3G6cE/edit?usp=sharing",
+      pdf: "#",
     },
     {
       name: "University Team",
-      pdf: "https://docs.google.com/spreadsheets/d/1hTe4C36RoWTEQGHYeANqTJF37bHryqde8f4OQad3sUM/edit?usp=sharing",
+      pdf: "#",
     },
     {
       name: "University Individual",
-      pdf: "https://docs.google.com/spreadsheets/d/1oevtF-3IZdDO2Mm8UZmfSZBSs0nuaQrk/edit?usp=sharing&ouid=108516483365954862566&rtpof=true&sd=true",
+      pdf: "#",
     },
     {
       name: "University Staff",
       pdf: "#",
     },
     {
-      name: "Corporate Team",
+      name: "Club Team",
       pdf: "#",
     },
     {
       name: "Novices",
-      pdf: "https://docs.google.com/spreadsheets/d/1viK41x4q4qXVlzm-_TL2wWztEzgZk1NRH4rjB-3lh-k/edit?usp=sharing",
+      pdf: "#",
     },
+     {
+      name: "Invitational School",
+      pdf: "#",
+    }
   ];
 
   return (
@@ -168,7 +184,7 @@ const DrawsPage = () => {
           {" for your perusal."}
           <p>
             Location : New Gymnasium University of Moratuwa - Katubedda &
-            Institute of Technology University of Moratuwa - Homagama
+            New Aspire Badminton & Activity Center - Rathmalana
           </p>
         </div>
         <div className={`${styles["entries-container"]}`}>
