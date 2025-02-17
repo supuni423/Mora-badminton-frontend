@@ -33,16 +33,9 @@ const HomePage = () => {
     "9.jpg",
   ]);
 
-  // const [sponsers, setSponsers] = useState([
-  //   "Eliteshuttler Logo-Black and Red logo in White background (1).png",
-  //   "Heyleys.png",
-  //   "KUAS.png",
-  //   "Lakdhanavi Ltd - Logo.png",
-  //   "Pagero.png",
-  //   "SLTMobitel_Logo.svg.png",
-  //   "Yang Yang Logo.png",
-  //   "Young Logo.png",
-  // ]);
+  const [sponsers, setSponsers] = useState([
+    "MSLogo.jpeg"
+  ]);
 
   const [sponsers, setSponsers] = useState([]);
 
