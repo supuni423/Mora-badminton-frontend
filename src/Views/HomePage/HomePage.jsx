@@ -37,7 +37,7 @@ const HomePage = () => {
     "MSLogo.jpeg"
   ]);
 
-  const [sponsers, setSponsers] = useState([]);
+  // const [sponsers, setSponsers] = useState([]);
 
   const [tShirtBack, setTShirtBack] = useState("tshirt-back.png");
 
