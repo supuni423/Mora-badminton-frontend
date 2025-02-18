@@ -178,13 +178,13 @@ const DrawsPage = () => {
         <div className={`${styles["tournament-schedule"]}`}>
           <img src={require("../../assests/images/point.png")} />
           {"Kindly refer to the enclosed "}
-          <a href="https://drive.google.com/file/d/1ITvDct33ZiFUvUwVhlD-ORfdJzUCC0qJ/view?usp=sharing" target="_blank">
+          <a href="#" target="_blank">
             Tournament Schedule
           </a>
           {" for your perusal."}
           <p>
             Location : New Gymnasium University of Moratuwa - Katubedda &
-            New Aspire Badminton & Activity Center - Rathmalana
+            New Aspire Badminton & Activity Center - Ratmalana
           </p>
         </div>
         <div className={`${styles["entries-container"]}`}>
