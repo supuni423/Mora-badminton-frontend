@@ -518,7 +518,7 @@ const HeaderPage = () => {
               </MenuItem>
               <MenuItem onClick={handleCloseMobile}>
                 <a
-                  href="https://drive.google.com/file/d/1euXZR4c20HT0XA5zYAL1lJB6BcAOY8qB/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1GBLJh2jr_H0hWhU_8xa0Diw7DbV2hyWY/view?usp=sharing"
                   target="_blank"
                   className={`${styles["drop-down-item-mobile"]}`}
                 >
@@ -536,7 +536,7 @@ const HeaderPage = () => {
               </MenuItem>
               <MenuItem onClick={handleCloseMobile}>
                 <a
-                  href="https://drive.google.com/file/d/1GzkrIxWi0_IOq3TmmBZwKpKWdKG1FDHP/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1khTjFuZb0eP_zxHPJi5QqGXrIwYNFuec/view?usp=sharing"
                   target="_blank"
                   className={`${styles["drop-down-item-mobile"]}`}
                 >
