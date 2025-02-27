@@ -34,7 +34,10 @@ const HomePage = () => {
   ]);
 
   const [sponsers, setSponsers] = useState([
-    "MSLogo.jpeg"
+    "MSLogo.jpeg",
+    "Amana Bank.png",
+    "Yeti.png",
+    "Gihan Apparalels.jpeg"
   ]);
 
   // const [sponsers, setSponsers] = useState([]);
