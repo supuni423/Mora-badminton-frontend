@@ -55,20 +55,23 @@ const HomePage = () => {
     outline: 'none',
     marginTop: '-7px',
     letterSpacing: '1px',
-    marginBottom:'0px'
+   
     
   };
-
+  const buttonURl = {
+   marginTop: "-7px"
+};
   // Container styles for the merchandise section
   const merchandiseContainerStyle = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    padding: '0px 50px ',
+    paddingBottom: '20px',
     borderRadius: '10px',
     marginTop: '5px',
-    Opacity:'20px'
+    Opacity:'20px',
+    
     
   };
 
@@ -107,7 +110,7 @@ const HomePage = () => {
         </div>
           <div style={merchandiseContainerStyle}>
           <div style={merchandiseTextStyle}>UMiSF 2025 official merchandise</div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIU264eXTtGNRB1oJIxO9q-7ayQbPTZUbcuR1HUPCCwSBBcA/viewform" target="blank">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIU264eXTtGNRB1oJIxO9q-7ayQbPTZUbcuR1HUPCCwSBBcA/viewform" style={buttonURl} target="blank">
           <button 
             style={buttonStyles}
             onMouseEnter={() => setIsHovered(true)}
