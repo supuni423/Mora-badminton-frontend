@@ -2,9 +2,13 @@ import React, { useState, useEffect } from "react";
 import styles from "./header.module.css";
 import HeaderPage from "../../HeaderPage/HeaderPage";
 import image from "../../../assests/images/gallery/1.jpg"
-import image2 from "../../../assests/images/gallery/2.jpg"
+import image2 from "../../../assests/images/gallery/6.jpg"
 import image3 from "../../../assests/images/gallery/3.jpg";
-import image4 from "../../../assests/images/gallery/4.jpg"
+import image4 from "../../../assests/images/gallery/4.jpg";
+import image5 from "../../../assests/images/gallery/T-1.jpg";
+import image6 from "../../../assests/images/gallery/T-2.jpg";
+import image7 from "../../../assests/images/gallery/T-3.jpg";
+
 
 // Import your background images (replace with your actual image paths)
 const backgroundImages = [
@@ -12,7 +16,11 @@ const backgroundImages = [
   image,
   image2,
   image3,
-  image4
+  image4,
+  image5,
+  image6,
+  image7
+
   
   
 ];
