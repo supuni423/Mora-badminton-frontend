@@ -14,9 +14,9 @@ import { Opacity } from "@mui/icons-material";
 
 // Import your background images (replace with your actual image paths)
 const backgroundImages = [
-  image,
-  image2,
-  image4,
+  // image,
+  // image2,
+  // image4,
   
   image6,
   image7,
