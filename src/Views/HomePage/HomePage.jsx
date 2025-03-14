@@ -38,7 +38,7 @@ const HomePage = () => {
     "Amana Bank.png",
     "Yeti.png",
     "Gihan Apparalels.jpeg",
-    "Mora Lenz.png",
+    "Pera Beats.png",
     "Live-Plus.png",
     "BOC.png"
   ]);
