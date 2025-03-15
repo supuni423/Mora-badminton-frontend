@@ -96,7 +96,7 @@ const DrawsPage = () => {
       name: "Age Group",
       entriess: 0,
       pdf: "https://docs.google.com/spreadsheets/d/1ojmjVxOQR2izjtRrwE94sGIjKCMOJU2jTjnHC3nqS4I/edit?usp=sharing",
-      pdf: "#",
+      // pdf: "#",
     },
     {
       name: "University Individual",
@@ -118,7 +118,7 @@ const DrawsPage = () => {
       name: "Novices",
       entriess: 0,
       pdf: "https://docs.google.com/spreadsheets/d/1bNSkUrblVyN97H75axH2QgqZttF8heRP/edit?usp=sharing&ouid=108516483365954862566&rtpof=true&sd=true",
-      pdf: "#",
+      // pdf: "#",
     },
     {
       name: "Club Team",
