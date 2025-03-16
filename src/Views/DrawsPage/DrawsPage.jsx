@@ -107,7 +107,7 @@ const DrawsPage = () => {
     {
       name: "University Staff",
       entriess: 0,
-      pdf: "#",
+      pdf: "https://docs.google.com/spreadsheets/d/1zwlm_Q1Pf3HZrDaDjcgourPfIKx81yJKvhlxqn8qs5o/edit?usp=sharing",
     },
     {
       name: "University Team",
