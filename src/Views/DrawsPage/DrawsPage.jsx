@@ -141,15 +141,15 @@ const DrawsPage = () => {
     },
     {
       name: "University Team",
-      pdf: "#",
+      pdf: "https://docs.google.com/spreadsheets/d/17kvE89K3FS6NTxEf2qb_tUpXoS8ac8sIrmulSxPqsAU/edit?usp=sharing",
     },
     {
       name: "University Individual",
-      pdf: "#",
+      pdf: "https://docs.google.com/spreadsheets/d/11wLn0E6_45mJ3gZP82KIS8ivyyDZt9y9/edit?usp=sharing&ouid=108516483365954862566&rtpof=true&sd=true",
     },
     {
       name: "University Staff",
-      pdf: "#",
+      pdf: "https://docs.google.com/spreadsheets/d/1r6T6vozhdqDMiDk7HjqMXUeDtvAxaGxa/edit?usp=sharing&ouid=108516483365954862566&rtpof=true&sd=true",
     },
     {
       name: "Club Team",
@@ -157,7 +157,7 @@ const DrawsPage = () => {
     },
     {
       name: "Novices",
-      pdf: "#",
+      pdf: "https://docs.google.com/spreadsheets/d/1Xmy84F2Uk1Gk7F2LU1B45e_pY0CEEyF1/edit?usp=sharing&ouid=108516483365954862566&rtpof=true&sd=true",
     },
      {
       name: "Invitational School",
