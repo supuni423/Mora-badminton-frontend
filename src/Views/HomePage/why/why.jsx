@@ -9,9 +9,7 @@ const Why = () => {
       </div>
       <div className={`${styles["why-desc"]}`}>
         <p>
-          UMiSF is the annual badminton tournament organized by the badminton
-          team of the University of Moratuwa, in collaboration with the Physical
-          Education Division of the university. It is conducted under 5 main
+          UMiSF is the annual badminton tournament organized by MoraBadminton. It is conducted under 3 main
           categories; <b>All island age group badminton championship</b>,{" "}
           <b>University badminton championship</b>,{" "}
           <b>University staff badminton championship</b>,{" "}
