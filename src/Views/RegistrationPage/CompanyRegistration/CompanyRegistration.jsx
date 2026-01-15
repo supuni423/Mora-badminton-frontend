@@ -6,7 +6,7 @@ import { MDBContainer, MDBInput,  MDBCol } from "mdb-react-ui-kit";
 import TableRow from "../Common/AddTablePlayer/TableRow";
 import Styles from "./CompanyRegistration.module.css";
 import RegistrationsNotOpen from "../../../common/registrationsNotOpen/RegistrationsNotOpen";
-import Axios from "axios";
+import { api } from "../../../common/api";
 import Dropdown from "../../../common/Dropdown/Dropdown";
 
 import { message } from "antd";
@@ -222,8 +222,8 @@ const CompanyRegistration = () => {
       const players = updatePlayerCommonData()
       setIsLoading(true);
       console.log(players)
-      Axios.post(
-        "http://localhost:3001/company/add",
+      api.post(
+        "/company/add",
         { companyDetails:company, players:players},
         {
           headers: {},
@@ -240,7 +240,8 @@ const CompanyRegistration = () => {
             images: imageList
           }
 
-          await Axios.post(process.env.REACT_APP_API_URL + "/image/addMultiple",
+          await api.post(
+            "/image/addMultiple",
             imageForm,
             {
               headers: {},

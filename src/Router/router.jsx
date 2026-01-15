@@ -71,13 +71,13 @@ export default function AppRouter() {
           <Route path="about" element={<AboutPage />} />
           <Route path="contact-us" element={<ContactUsPage />} />
           <Route path="Timeline" element={<Timeline/>}/>
-          {/* <Route path="register">
+          <Route path="register">
             <Route path="player" element={<PlayerRegistration />} />
             <Route path="player/:id" element={<SuccessMessage />} />
             <Route path="single-double" element={<RegisterAll/>} />
             <Route path="university" element={<UniversityRegistration />} />
             <Route path="company" element={<CompanyRegistration />} />
-          </Route> */}
+          </Route>
           <Route path="draws" element={<DrawsPage />} />
 
           <Route path="draws-edit" element={<DrawEditPage />} />
@@ -102,9 +102,9 @@ export default function AppRouter() {
           {/*todo: conditions should change*/}
 
           {type === 'admin' ? (
-            <Route>
-              <Route exact path="admin">
-                <Route path="" element={<AdminHomePage />} />
+            <>
+              <Route path="admin">
+                <Route index element={<AdminHomePage />} />
                 <Route path="gallery" element={<AdminGalleryPage />} />
                 <Route
                   path="gallery/year/:year"
@@ -195,31 +195,31 @@ export default function AppRouter() {
                 <Route path="*" element={<NotFound />} />
               </Route>
               <Route path="*" element={<Unauth />} />
-            </Route>
+            </>
           ) : type === 'organizer' ? (
-            <Route>
-              <Route exact path="organizer">
-                <Route path="" element={<OrganizerHomePage />} />
+            <>
+              <Route path="organizer">
+                <Route index element={<OrganizerHomePage />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
               <Route path="*" element={<Unauth />} />
-            </Route>
+            </>
           ) : type === 'tableOrganizer' ? (
-            <Route>
-              <Route exact path="table">
-                <Route path="" element={<TableHomePage />} />
+            <>
+              <Route path="table">
+                <Route index element={<TableHomePage />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
               <Route path="*" element={<Unauth />} />
-            </Route>
+            </>
           ) : type === 'umpire' ? (
-            <Route>
-              <Route exact path="umpire">
-                <Route path="" element={<UmpireHomePage />} />
+            <>
+              <Route path="umpire">
+                <Route index element={<UmpireHomePage />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
               <Route path="*" element={<Unauth />} />
-            </Route>
+            </>
           ) : (
             <Route path="/" element={<HomePage />} />
           )}

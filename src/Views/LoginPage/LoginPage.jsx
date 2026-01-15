@@ -5,7 +5,7 @@ import { message } from "antd";
 import styles from "./loginPage.module.css";
 import HeaderPage from "../HeaderPage/HeaderPage";
 import Dropdown from "../../common/Dropdown/Dropdown";
-import Axios from "axios";
+import { api } from "../../common/api";
 import { useNavigate } from "react-router-dom";
 
 const LoginPage = (props) => {
@@ -34,8 +34,8 @@ const LoginPage = (props) => {
     setValidated(true);
     let role = roles[roleOptions.indexOf(loginCredentials.role)];
     if (form.checkValidity() && !Object.values(loginCredentials).includes("")) {
-      Axios.post(
-        "http://localhost:3001/user/login",
+      api.post(
+        "/user/login",
         { email: loginCredentials.email, password: loginCredentials.password, role: role },
         {
           headers: {},

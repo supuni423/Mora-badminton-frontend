@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./headerPage.module.css";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { indigo } from "@mui/material/colors";
 import IconButton from "@mui/material/IconButton";
-import { Button, Dropdown } from "antd";
-import { DownOutlined, UserOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const HeaderPage = () => {
   const [anchor, setAnchor] = useState(null);
@@ -52,19 +51,19 @@ const HeaderPage = () => {
     <div className={`${styles["nav-container"]}`}>
       <div className={`${styles["nav-bars"]}`}>
         <div className={`${styles["navBarList"]}`}>
-          <a href="/">
+          <Link to="/">
             <img
               src={require("../../assests/images/umisf_logo.png")}
               alt={"logo"}
             ></img>
-          </a>
+          </Link>
           <ul>
-            <a href="/" className={`${styles["navBarItemLink"]}`}>
+            <Link to="/" className={`${styles["navBarItemLink"]}`}>
               <li className={`${styles["navBarItem"]}`}>Home</li>
-            </a>
-            <a href="/about" className={`${styles["navBarItemLink"]}`}>
+            </Link>
+            <Link to="/about" className={`${styles["navBarItemLink"]}`}>
               <li className={`${styles["navBarItem"]}`}>About</li>
-            </a>
+            </Link>
             <React.Fragment>
               <IconButton
                 onClick={handleClickRegister}
@@ -111,16 +110,43 @@ const HeaderPage = () => {
                 }}
                 transformOrigin={{ horizontal: "right", vertical: "top" }}
                 anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
-              >
-                {/* <MenuItem onClick={handleClose}>
-                  <a href="#" className={`${styles["drop-down-item"]}`}>
-                    Player
-                  </a>
-                </MenuItem> */}
+	              >
+	                <MenuItem onClick={handleCloseRegister}>
+	                  <Link
+	                    to="/register/single-double"
+	                    className={`${styles["drop-down-item"]}`}
+	                  >
+	                    Register (Online)
+	                  </Link>
+	                </MenuItem>
+	                <MenuItem onClick={handleCloseRegister}>
+	                  <Link
+	                    to="/register/player"
+	                    className={`${styles["drop-down-item"]}`}
+	                  >
+	                    Player Registration
+	                  </Link>
+	                </MenuItem>
+	                <MenuItem onClick={handleCloseRegister}>
+	                  <Link
+	                    to="/register/university"
+	                    className={`${styles["drop-down-item"]}`}
+	                  >
+	                    University Registration
+	                  </Link>
+	                </MenuItem>
+	                <MenuItem onClick={handleCloseRegister}>
+	                  <Link
+	                    to="/register/company"
+	                    className={`${styles["drop-down-item"]}`}
+	                  >
+	                    Company Registration
+	                  </Link>
+	                </MenuItem>
 
-                <MenuItem onClick={handleCloseRegister}>
-                  <a
-                    href="https://forms.gle/dyu5Q2Xu2qoN7Sp2A"
+	                <MenuItem onClick={handleCloseRegister}>
+	                  <a
+	                    href="https://forms.gle/dyu5Q2Xu2qoN7Sp2A"
                     target="_blank"
                     className={`${styles["drop-down-item"]}`}
                   >
@@ -284,18 +310,18 @@ const HeaderPage = () => {
                 </MenuItem>
               </Menu>
             </React.Fragment>
-            <a href="/draws" className={`${styles["navBarItemLink"]}`}>
+            <Link to="/draws" className={`${styles["navBarItemLink"]}`}>
               <li className={`${styles["navBarItem"]}`}>Draws and Entries</li>
-            </a>
-            <a href="/Timeline" className={`${styles["navBarItemLink"]}`}>
+            </Link>
+            <Link to="/Timeline" className={`${styles["navBarItemLink"]}`}>
               <li className={`${styles["navBarItem"]}`}>Events</li>
-            </a>
+            </Link>
             {/* <a href="/developers" className={`${styles["navBarItemLink"]}`}>
               <li className={`${styles["navBarItem"]}`}>Developers</li>
             </a> */}
-            <a href="/contact-us" className={`${styles["navBarItemLink"]}`}>
+            <Link to="/contact-us" className={`${styles["navBarItemLink"]}`}>
               <li className={`${styles["navBarItem"]}`}>Contact Us</li>
-            </a>
+            </Link>
             {/* <a href="/login" className={`${styles["navBarItemLink"]}`}>
               <li className={`${styles["navBarItem"]}`}>Login</li>
             </a> */}
@@ -313,12 +339,12 @@ const HeaderPage = () => {
       </div>
       <div id="navSideBar" className={`${styles["navSideBar"]}`}>
         <ul>
-          <a href="/" className={`${styles["minNavLink"]}`}>
+          <Link to="/" className={`${styles["minNavLink"]}`}>
             <li className={`${styles["navBarItem"]}`}>Home</li>
-          </a>
-          <a href="/about" className={`${styles["minNavLink"]}`}>
+          </Link>
+          <Link to="/about" className={`${styles["minNavLink"]}`}>
             <li className={`${styles["navBarItem"]}`}>About</li>
-          </a>
+          </Link>
           <React.Fragment>
             <IconButton
               onClick={handleClickRegisterMobile}
@@ -371,16 +397,43 @@ const HeaderPage = () => {
                 vertical: "top",
                 horizontal: "right",
               }}
-            >
-              {/* <MenuItem onClick={handleClose}>
-                  <a href="#" className={`${styles["drop-down-item"]}`}>
-                    Player
-                  </a>
-                </MenuItem> */}
+	            >
+	              <MenuItem onClick={handleCloseRegisterMobile}>
+	                <Link
+	                  to="/register/single-double"
+	                  className={`${styles["drop-down-item-mobile"]}`}
+	                >
+	                  Register (Online)
+	                </Link>
+	              </MenuItem>
+	              <MenuItem onClick={handleCloseRegisterMobile}>
+	                <Link
+	                  to="/register/player"
+	                  className={`${styles["drop-down-item-mobile"]}`}
+	                >
+	                  Player Registration
+	                </Link>
+	              </MenuItem>
+	              <MenuItem onClick={handleCloseRegisterMobile}>
+	                <Link
+	                  to="/register/university"
+	                  className={`${styles["drop-down-item-mobile"]}`}
+	                >
+	                  University Registration
+	                </Link>
+	              </MenuItem>
+	              <MenuItem onClick={handleCloseRegisterMobile}>
+	                <Link
+	                  to="/register/company"
+	                  className={`${styles["drop-down-item-mobile"]}`}
+	                >
+	                  Company Registration
+	                </Link>
+	              </MenuItem>
 
-              <MenuItem onClick={handleCloseRegisterMobile}>
-                <a
-                  href="https://forms.gle/dyu5Q2Xu2qoN7Sp2A"
+	              <MenuItem onClick={handleCloseRegisterMobile}>
+	                <a
+	                  href="https://forms.gle/dyu5Q2Xu2qoN7Sp2A"
                   target="_blank"
                   className={`${styles["drop-down-item-mobile"]}`}
                 >
@@ -443,9 +496,9 @@ const HeaderPage = () => {
                 </MenuItem> */}
             </Menu>
           </React.Fragment>
-          <a href="/draws" className={`${styles["minNavLink"]}`}>
+          <Link to="/draws" className={`${styles["minNavLink"]}`}>
             <li className={`${styles["navBarItem"]}`}>Draws and Entries</li>
-          </a>
+          </Link>
 
           <React.Fragment>
             <IconButton
@@ -576,15 +629,15 @@ const HeaderPage = () => {
           {/* <a href="/draws" className={`${styles["minNavLink"]}`}>
             <li className={`${styles["navBarItem"]}`}>Draws and Entries</li>
           </a> */}
-          <a href="/Timeline" className={`${styles["minNavLink"]}`}>
+          <Link to="/Timeline" className={`${styles["minNavLink"]}`}>
             <li className={`${styles["navBarItem"]}`}>Events</li>
-          </a>
+          </Link>
           {/* <a href="/developers" className={`${styles["minNavLink"]}`}>
             <li className={`${styles["navBarItem"]}`}>Developers</li>
           </a> */}
-          <a href="/contact-us" className={`${styles["minNavLink"]}`}>
+          <Link to="/contact-us" className={`${styles["minNavLink"]}`}>
             <li className={`${styles["navBarItem"]}`}>Contact Us</li>
-          </a>
+          </Link>
           {/* <a href="/login" className={`${styles["minNavLink"]}`}>
             <li className={`${styles["navBarItem"]}`}>Login</li>
           </a> */}

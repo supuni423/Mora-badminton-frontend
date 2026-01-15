@@ -91,9 +91,9 @@ const Flyer = (props) => {
         Tournament Schedule</a>
         </div>
 
-        {/* <div className={`${styles['register']}`} onClick={toggleShow} type='button'>
+        <div className={`${styles['register']}`} onClick={toggleShow} type='button'>
           Register
-        </div> */}
+        </div>
         {/* <div className={`${styles['before']}`}>
           {`from ${registrationPeriod[0][2]}`} <sup style={{ fontSize: '0.6vw' }}>{`${superscript(registrationPeriod[0][2].charAt(registrationPeriod[0][2].length - 1))}`}</sup>{' '}
           {`${registrationPeriod[0][1]} ${registrationPeriod[0][0]}`}

@@ -6,7 +6,7 @@ import { MDBContainer, MDBInput, MDBBtn, MDBCol } from "mdb-react-ui-kit";
 import { Button, Divider, Space, Tour } from "antd";
 import TableRow from "../Common/AddTablePlayer/TableRow";
 import Styles from "./UniversityRegistration.module.css";
-import Axios from "axios";
+import { api } from "../../../common/api";
 import { PlusCircleTwoTone, MinusCircleTwoTone } from "@ant-design/icons";
 import Dropdown from "../../../common/Dropdown/Dropdown";
 import RegistrationsNotOpen from "../../../common/registrationsNotOpen/RegistrationsNotOpen";
@@ -234,8 +234,8 @@ const UniversityRegistration = () => {
       console.log("Here");
       const players = updatePlayerCommonData();
       console.log(players);
-      Axios.post(
-        process.env.REACT_APP_API_URL + "/university/add",
+      api.post(
+        "/university/add",
         { universityDetails: university, players: players },
         {
           headers: {},
@@ -253,7 +253,8 @@ const UniversityRegistration = () => {
             images: imageList
           }
 
-          await Axios.post(process.env.REACT_APP_API_URL + "/image/addMultiple",
+          await api.post(
+            "/image/addMultiple",
             imageForm,
             {
               headers: {},

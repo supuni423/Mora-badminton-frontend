@@ -8,7 +8,7 @@ import { Button, Divider, Space, Tour } from "antd";
 import Switch from "@mui/material/Switch";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import TableRow from "../Common/AddTablePerf/TableRow";
-import Axios from "axios";
+import { api } from "../../../common/api";
 import { CheckCircleTwoTone, ExclamationCircleTwoTone } from "@ant-design/icons";
 import { Modal, message, Select } from "antd";
 import Dropdown from "../../../common/Dropdown/Dropdown";
@@ -111,8 +111,8 @@ const RegisterAll = () => {
           setIsSubmitting(true);
           if (isPlayingSingle) {
             try {
-              singleRes = await Axios.post(
-                process.env.REACT_APP_API_URL + "/single/add",
+              singleRes = await api.post(
+                "/single/add",
                 { singleData: [single] },
                 {
                   headers: {},
@@ -130,8 +130,8 @@ const RegisterAll = () => {
           }
           if (isPlayingDouble) {
             try {
-              doubleRes = await Axios.post(
-                process.env.REACT_APP_API_URL + "/double/add",
+              doubleRes = await api.post(
+                "/double/add",
                 { data: [double] },
                 {
                   headers: {},
@@ -339,7 +339,11 @@ const RegisterAll = () => {
           //nothing
           console.log("nothing");
         } else {
-          return ["~error~"];
+          newArr.push({
+            name: name || "N/A",
+            level: level || "N/A",
+            place: place || "N/A",
+          });
         }
       } else {
         newArr.push(value);
@@ -400,8 +404,8 @@ const RegisterAll = () => {
       !perfError
     ) {
       try {
-        const res = await Axios.get(
-          process.env.REACT_APP_API_URL + "/player/getByObjectId",
+        const res = await api.get(
+          "/player/getByObjectId",
           { params: { ids: single.player } },
           {
             headers: {},
@@ -429,8 +433,9 @@ const RegisterAll = () => {
         !Object.values(double).includes("")) &&
       !perfError
     ) {
-      Axios.get(
-        process.env.REACT_APP_API_URL + "/player/getByObjectId",
+      api
+        .get(
+          "/player/getByObjectId",
         { params: { ids: double.player + "," + double.playerPartner } },
         {
           headers: {},

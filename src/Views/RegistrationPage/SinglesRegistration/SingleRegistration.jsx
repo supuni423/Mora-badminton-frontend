@@ -5,7 +5,7 @@ import info from "../../../assests/images/info.gif";
 import { Form } from "react-bootstrap";
 import { MDBContainer, MDBInput, MDBBtn, MDBCol } from "mdb-react-ui-kit";
 import TableRow from "../Common/AddTablePerf/TableRow";
-import Axios from "axios";
+import { api } from "../../../common/api";
 import { CheckCircleTwoTone, ExclamationCircleTwoTone, PlusCircleTwoTone, MinusCircleTwoTone } from "@ant-design/icons";
 import { Modal } from "antd";
 import { message } from "antd";
@@ -44,8 +44,8 @@ const SingleRegistration = () => {
         console.log("OK");
         if (success) {
           setIsSubmitting(true);
-          Axios.post(
-            process.env.REACT_APP_API_URL + "/single/add",
+          api.post(
+            "/single/add",
             { singleData: [single] },
             {
               headers: {},
@@ -149,16 +149,17 @@ const SingleRegistration = () => {
     single.pastPerformance = pastPerformanceArray;
 
     if ((Object.values(single).includes("") && single.paymentMethod == "On-site" && single.paymentSlip == "") || !Object.values(single).includes("")) {
-      Axios.get(process.env.REACT_APP_API_URL + "/player/getByObjectId/" + single.player, {
-        headers: {},
-      })
+      api
+        .get("/player/getByObjectId", { params: { ids: single.player } })
         .then(async (res) => {
           console.log("Result from get player by id", res.data);
           showConfirm("Confirm your data !", true, res.data.toString());
         })
         .catch((error) => {
-          console.log("Error: ", error.response.data.message);
-          showConfirm("Error Loading Player !", false, error.response.data.message);
+          const apiMessage =
+            error?.response?.data?.message || error?.message || "Error loading player";
+          console.log("Error: ", apiMessage);
+          showConfirm("Error Loading Player !", false, apiMessage);
         });
     }
   }

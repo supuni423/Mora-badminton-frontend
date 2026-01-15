@@ -7,7 +7,7 @@ import { RadiusBottomrightOutlined } from "@ant-design/icons";
 import { Form } from "react-bootstrap";
 import { MDBContainer, MDBInput, MDBBtn, MDBCol } from "mdb-react-ui-kit";
 import ImageUploader from "../Common/imageUploader/ImageUploader";
-import Axios from "axios";
+import { api } from "../../../common/api";
 import { message } from "antd";
 import Dropdown from "../../../common/Dropdown/Dropdown";
 import SuccessMessage from "../Common/SuccessMessage/SuccessMessage";
@@ -108,8 +108,9 @@ const PlayerRegistration = () => {
 
       formData.append("playerData", [player]);
 
-      Axios.post(
-        process.env.REACT_APP_API_URL + "/player/add",
+      api
+        .post(
+          "/player/add",
         { playerData: [player] },
         {
           headers: {},
@@ -123,7 +124,8 @@ const PlayerRegistration = () => {
           
           if(image !== null){
             const imageForm = {image: image,  playerId: res.data.data[0]["_id"], imageName: imageName};
-            await Axios.post(process.env.REACT_APP_API_URL + "/image/add",
+            await api.post(
+              "/image/add",
             imageForm,
             {
               headers: {},
@@ -135,7 +137,11 @@ const PlayerRegistration = () => {
         })
         .catch((error) => {
           console.log("Error: ", error);
-          message.error(error.response.data.message);
+          const apiMessage =
+            error?.response?.data?.message ||
+            error?.message ||
+            "Registration failed. Please try again.";
+          message.error(apiMessage);
         });
       setIsSubmitting(false);
     }
